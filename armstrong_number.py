@@ -24,6 +24,11 @@ n=int(input("enter the number--> "))
 for i in range(n,0,- 1):
     print('*'*i)
 
+#OR
+n=int(input("enter the number--> "))
+for i in range(0,n+1):
+    print('*'*(n-i)
+
 
 # Q3 ANS
 def dtob(number):
