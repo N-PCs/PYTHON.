@@ -102,4 +102,16 @@ arr5.reverse()
 print(arr5)
 
 #reversed() function
+arr6=array.array('i',reversed(arr5))
+print(arr6)
+
+
+#arrays can be utilised by importing numpy library
+#no typecode needed in this case
+
+import numpy as np
+arr7=np.array([1,2,3,4,5,6,7,8,9,10])
+
+#flip() method => used to reverse an array when created by numpy
+print(np.flip(arr7))
 
