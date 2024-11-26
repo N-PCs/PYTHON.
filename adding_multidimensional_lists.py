@@ -1,6 +1,6 @@
 #adding multiple multidimensional lists
 #take two matrices of your choices 
-# let the third matrix be empty
+#let the third matrix be empty
 l4=[[1,2,3],[4,5,6],[7,8,9]]
 l5=[[9,8,7],[6,5,4],[3,2,1]]
 l6=[[0,0,0],[0,0,0],[0,0,0]]
