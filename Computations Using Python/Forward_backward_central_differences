@@ -1,0 +1,25 @@
+#write the code for calculate forward , backward , central difference for any function of your choice
+
+def forward_diff(x,h):
+	def f(x):
+		return x**2
+	forward_difference=(f(x+h)-f(x))/(h)
+	return forward_difference
+def backward_diff(x,h):
+	def f(x):
+		return x**2
+	backward_difference=(f(x)-f(x-h))/(h)
+	return backward_difference
+
+def central_diff(x,h):
+	def f(x):
+		return x**2
+	central_difference=(f(x+h)-f(x-h))/(2*h)
+	return central_difference
+
+
+x=int(input("Function x : "))
+h=0.001
+print("Forward diffrence : ",forward_diff(x,h))
+print("Backward difference : ",backward_diff(x,h))
+print("Central difference : ",central_diff(x,h))
