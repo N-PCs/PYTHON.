@@ -1,0 +1,17 @@
+"""4. Create a Python program that does the following:
+(a) Generates a dataset of 500 random numbers between 0 and 100.
+(b) Calculate the following measures of dispersion:
+ Range: The difference between the maximum and minimum values in the
+dataset.
+ Standard Deviation: A measure of how spread out the values are."""
+
+import numpy as np
+#random sequence
+a=np.random.randint(0,100,500)
+print(a)
+#range
+Range=max(a)-min(a)
+# standard deviation
+b=np.std(a)
+print("Range of given inputs are : ",Range)
+print("Standard Deviation of given inputs are : ",b)
