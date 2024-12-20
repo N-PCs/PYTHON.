@@ -1,0 +1,20 @@
+"""7. Determine the displacement of a spring in SHM
+and plot its phase diagram (displace-ment vs. velocity)."""
+
+import matplotlib.pyplot as plt
+import numpy as np
+#initialize values
+A=1
+w=2*np.pi
+phi=float(input("phi : "))     #take input of pi
+t=np.linspace(0,2,100)
+x=A*np.sin(w*t+phi)
+v=A*w*np.cos(w*t)
+#plotting
+plt.plot(x,v)
+plt.xlabel('(x) displacement')
+plt.ylabel('(v) velocity')
+plt.title('Spring displacement')
+plt.legend()
+plt.grid(True)
+plt.show()
